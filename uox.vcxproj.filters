@@ -44,6 +44,9 @@
     <ClCompile Include="uox\main.cpp">
       <Filter>uox</Filter>
     </ClCompile>
+    <ClCompile Include="server.cpp">
+      <Filter>uox\network</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="uox\utility\buffer.hpp">
@@ -77,6 +80,9 @@
       <Filter>uox\network</Filter>
     </ClInclude>
     <ClInclude Include="uox\network\packetinfo.hpp">
+      <Filter>uox\network</Filter>
+    </ClInclude>
+    <ClInclude Include="server.hpp">
       <Filter>uox\network</Filter>
     </ClInclude>
   </ItemGroup>

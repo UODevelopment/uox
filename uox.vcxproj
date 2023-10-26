@@ -11,6 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="server.cpp" />
     <ClCompile Include="uox\main.cpp" />
     <ClCompile Include="uox\network\clientversion.cpp" />
     <ClCompile Include="uox\network\huffman.cpp" />
@@ -21,6 +22,7 @@
     <ClCompile Include="uox\utility\netutil.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="server.hpp" />
     <ClInclude Include="uox\network\clientversion.hpp" />
     <ClInclude Include="uox\network\huffman.hpp" />
     <ClInclude Include="uox\network\packet.hpp" />
