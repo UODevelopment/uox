@@ -6,6 +6,7 @@
 #include <stdexcept>
 
 #include "huffman.hpp"
+#include "packetinfo.hpp"
 #include "utility/strutil.hpp"
 
 using namespace std::string_literals ;
@@ -37,12 +38,15 @@ Packet::Packet( std::vector<std::uint8_t> &&data): util::Buffer(std::move(data))
 
 //====================================================================
 auto Packet::name() const -> const std::string& {
-    static std::string temp ;
-    return temp ;
+    static const std::string& invalid = "Invalid"s;
+    if (data.size() > 0) {
+        return PacketInfo::nameFor(this->packetID());
+    }
+    return invalid;
 }
 //====================================================================
-auto Packet::finalize() -> void {
-    if (this->variable()){
+auto Packet::finalize(bool variable) -> void {
+    if (variable){
         this->write(static_cast<std::uint16_t>(data.size()),1);
     }
 }
@@ -66,9 +70,9 @@ auto Packet::bufferSize() -> int {
     return static_cast<int>(data.size());
 }
 //====================================================================
-auto Packet::size() -> int {
+auto Packet::size(bool variable) -> int {
     
-    if (this->variable() && data.size()>=3){
+    if (variable && data.size()>=3){
         return static_cast<int>(this->read<std::uint16_t>(1));
     }
     return static_cast<int>(data.size());

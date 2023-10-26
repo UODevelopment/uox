@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="uox">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="uox\network">
+      <UniqueIdentifier>{7e9e4169-8526-41a5-ab9d-cc6780a94d45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="uox\type">
+      <UniqueIdentifier>{08ecd5a4-6086-4520-999a-c265a98a6ab1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="uox\utility">
+      <UniqueIdentifier>{e58d6ad1-8734-4981-b995-b28c726f94d0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="uox\utility\buffer.cpp">
+      <Filter>uox\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\utility\ip4util.cpp">
+      <Filter>uox\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\utility\netutil.cpp">
+      <Filter>uox\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\network\clientversion.cpp">
+      <Filter>uox\network</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\network\huffman.cpp">
+      <Filter>uox\network</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\network\packet.cpp">
+      <Filter>uox\network</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\network\packetinfo.cpp">
+      <Filter>uox\network</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\main.cpp">
+      <Filter>uox</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="uox\utility\buffer.hpp">
+      <Filter>uox\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\utility\ip4util.hpp">
+      <Filter>uox\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\utility\neterror.hpp">
+      <Filter>uox\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\utility\nettype.hpp">
+      <Filter>uox\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\utility\netutil.hpp">
+      <Filter>uox\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\utility\strutil.hpp">
+      <Filter>uox\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\type\typedef.hpp">
+      <Filter>uox\type</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\network\clientversion.hpp">
+      <Filter>uox\network</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\network\huffman.hpp">
+      <Filter>uox\network</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\network\packet.hpp">
+      <Filter>uox\network</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\network\packetinfo.hpp">
+      <Filter>uox\network</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

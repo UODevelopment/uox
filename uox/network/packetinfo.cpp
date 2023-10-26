@@ -10,7 +10,7 @@
 using namespace std::string_literals ;
 
 //======================================================================
-const std::vector<std::string> PACKETNAME{
+const std::vector<std::string> PacketInfo::PACKETNAME{
     "Create Character"s,
     "Disconnect Notification"s,
     "Move Request"s,
@@ -543,7 +543,7 @@ PacketInfo::PacketInfo(const ClientVersion &version) :PacketInfo(){
 }
 //======================================================================
 auto PacketInfo::update(const ClientVersion &version) ->void {
-    if (version >= ClientVersion(5,0,0,static_cast<int>(static_cast<std::uint32_t>('a') &0xFF)) {
+    if (version >= ClientVersion(5,0,0,static_cast<int>(static_cast<std::uint32_t>('a') &0xFF))) {
         packetSize.at(0x0B) = 0x07;
         packetSize.at(0x16) = -1;
         packetSize.at(0x31) = -1;
@@ -561,7 +561,7 @@ auto PacketInfo::update(const ClientVersion &version) ->void {
         packetSize.at(0xE1) = 0x09;
     }
 
-    if (version >= ClientVersion(6,0,1,3) {
+    if (version >= ClientVersion(6,0,1,3)) {
         packetSize.at(0xE3) = -1;
         packetSize.at(0xE6) = 0x05;
         packetSize.at(0xE7) = 0x0C;

@@ -8,7 +8,7 @@
 #include <unordered_map>
 #include <string>
 
-#include "buffer.hpp"
+#include "utility/buffer.hpp"
 #include "clientversion.hpp"
 using packetid_t = int ;
 //======================================================================
@@ -23,13 +23,12 @@ public:
     Packet( std::vector<std::uint8_t> &&data) ;
 
     auto name() const -> const std::string& ;
-    auto variable() const -> bool ;
     
-    auto finalize() -> void ;
+    auto finalize(bool variable = false) -> void ;
     auto packetID() const -> packetid_t ;
     auto setPacketID(packetid_t id) -> void ;
     auto bufferSize() -> int ;
-    auto size() -> int ;
+    auto size(bool variable = false) -> int ;
     auto packetData() const -> std::vector<std::uint8_t>  ;
     auto huffmanData() const -> std::vector<std::uint8_t> ;
     auto dump(std::ostream &output) const -> void ;
