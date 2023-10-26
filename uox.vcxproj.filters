@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Resource Files">
@@ -44,7 +44,7 @@
     <ClCompile Include="uox\main.cpp">
       <Filter>uox</Filter>
     </ClCompile>
-    <ClCompile Include="server.cpp">
+    <ClCompile Include="uox\network\server.cpp">
       <Filter>uox\network</Filter>
     </ClCompile>
   </ItemGroup>
@@ -82,7 +82,7 @@
     <ClInclude Include="uox\network\packetinfo.hpp">
       <Filter>uox\network</Filter>
     </ClInclude>
-    <ClInclude Include="server.hpp">
+    <ClInclude Include="uox\network\server.hpp">
       <Filter>uox\network</Filter>
     </ClInclude>
   </ItemGroup>
