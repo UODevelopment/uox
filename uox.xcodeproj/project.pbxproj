@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56536DDE2AEA84010073C28F /* ip4util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56536DDD2AEA84010073C28F /* ip4util.cpp */; };
+		56536DE22AEA84120073C28F /* netutil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56536DE02AEA84120073C28F /* netutil.cpp */; };
 		56F6BF7B2AE93A150038831F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56F6BF7A2AE93A150038831F /* main.cpp */; };
+		56F6BF832AE93A760038831F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F6BF822AE93A6F0038831F /* libz.tbd */; };
+		56F6BF882AE93AB80038831F /* buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56F6BF852AE93AB80038831F /* buffer.cpp */; };
+		56F6BF922AE93C9B0038831F /* clientversion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56F6BF902AE93C9B0038831F /* clientversion.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +28,29 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		56F6BF772AE93A150038831F /* packets */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = packets; sourceTree = BUILT_PRODUCTS_DIR; };
+		56536DDB2AEA83E80073C28F /* typedef.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = typedef.hpp; sourceTree = "<group>"; };
+		56536DDC2AEA84010073C28F /* ip4util.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ip4util.hpp; sourceTree = "<group>"; };
+		56536DDD2AEA84010073C28F /* ip4util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ip4util.cpp; sourceTree = "<group>"; };
+		56536DDF2AEA84110073C28F /* nettype.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = nettype.hpp; sourceTree = "<group>"; };
+		56536DE02AEA84120073C28F /* netutil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = netutil.cpp; sourceTree = "<group>"; };
+		56536DE12AEA84120073C28F /* netutil.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = netutil.hpp; sourceTree = "<group>"; };
+		56536DE32AEA84600073C28F /* neterror.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = neterror.hpp; sourceTree = "<group>"; };
+		56F6BF772AE93A150038831F /* uox */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = uox; sourceTree = BUILT_PRODUCTS_DIR; };
 		56F6BF7A2AE93A150038831F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		56F6BF822AE93A6F0038831F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		56F6BF852AE93AB80038831F /* buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = buffer.cpp; sourceTree = "<group>"; };
+		56F6BF862AE93AB80038831F /* strutil.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = strutil.hpp; sourceTree = "<group>"; };
+		56F6BF872AE93AB80038831F /* buffer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = buffer.hpp; sourceTree = "<group>"; };
+		56F6BF8A2AE93B020038831F /* packet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = packet.cpp; sourceTree = "<group>"; };
+		56F6BF8B2AE93B020038831F /* packet.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = packet.hpp; sourceTree = "<group>"; };
+		56F6BF8D2AE93B6E0038831F /* huffman.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = huffman.cpp; sourceTree = "<group>"; };
+		56F6BF8E2AE93B6E0038831F /* huffman.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = huffman.hpp; sourceTree = "<group>"; };
+		56F6BF902AE93C9B0038831F /* clientversion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = clientversion.cpp; sourceTree = "<group>"; };
+		56F6BF912AE93C9B0038831F /* clientversion.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = clientversion.hpp; sourceTree = "<group>"; };
+		56F6BF962AE964120038831F /* packet0xef.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = packet0xef.cpp; sourceTree = "<group>"; };
+		56F6BF972AE964120038831F /* packet0xef.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = packet0xef.hpp; sourceTree = "<group>"; };
+		56F6BF9C2AE992EE0038831F /* packetinfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = packetinfo.cpp; sourceTree = "<group>"; };
+		56F6BF9D2AE992EE0038831F /* packetinfo.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = packetinfo.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,42 +58,128 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56F6BF832AE93A760038831F /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56536DDA2AEA83D50073C28F /* type */ = {
+			isa = PBXGroup;
+			children = (
+				56536DDB2AEA83E80073C28F /* typedef.hpp */,
+			);
+			path = type;
+			sourceTree = "<group>";
+		};
 		56F6BF6E2AE93A150038831F = {
 			isa = PBXGroup;
 			children = (
-				56F6BF792AE93A150038831F /* packets */,
+				56F6BF9F2AE9AC380038831F /* support */,
+				56F6BF792AE93A150038831F /* uox */,
 				56F6BF782AE93A150038831F /* Products */,
+				56F6BF812AE93A6F0038831F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		56F6BF782AE93A150038831F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				56F6BF772AE93A150038831F /* packets */,
+				56F6BF772AE93A150038831F /* uox */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		56F6BF792AE93A150038831F /* packets */ = {
+		56F6BF792AE93A150038831F /* uox */ = {
 			isa = PBXGroup;
 			children = (
+				56536DDA2AEA83D50073C28F /* type */,
+				56F6BF892AE93AED0038831F /* network */,
+				56F6BF842AE93AB80038831F /* utility */,
 				56F6BF7A2AE93A150038831F /* main.cpp */,
 			);
-			path = packets;
+			path = uox;
+			sourceTree = "<group>";
+		};
+		56F6BF812AE93A6F0038831F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56F6BF822AE93A6F0038831F /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56F6BF842AE93AB80038831F /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				56536DE32AEA84600073C28F /* neterror.hpp */,
+				56536DDF2AEA84110073C28F /* nettype.hpp */,
+				56536DE02AEA84120073C28F /* netutil.cpp */,
+				56536DE12AEA84120073C28F /* netutil.hpp */,
+				56536DDD2AEA84010073C28F /* ip4util.cpp */,
+				56536DDC2AEA84010073C28F /* ip4util.hpp */,
+				56F6BF852AE93AB80038831F /* buffer.cpp */,
+				56F6BF872AE93AB80038831F /* buffer.hpp */,
+				56F6BF862AE93AB80038831F /* strutil.hpp */,
+			);
+			path = utility;
+			sourceTree = "<group>";
+		};
+		56F6BF892AE93AED0038831F /* network */ = {
+			isa = PBXGroup;
+			children = (
+				56F6BF952AE963CE0038831F /* bidirectional */,
+				56F6BF932AE963BD0038831F /* incoming */,
+				56F6BF942AE963C60038831F /* outgoing */,
+				56F6BF902AE93C9B0038831F /* clientversion.cpp */,
+				56F6BF912AE93C9B0038831F /* clientversion.hpp */,
+				56F6BF8D2AE93B6E0038831F /* huffman.cpp */,
+				56F6BF8E2AE93B6E0038831F /* huffman.hpp */,
+				56F6BF8A2AE93B020038831F /* packet.cpp */,
+				56F6BF8B2AE93B020038831F /* packet.hpp */,
+				56F6BF9C2AE992EE0038831F /* packetinfo.cpp */,
+				56F6BF9D2AE992EE0038831F /* packetinfo.hpp */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		56F6BF932AE963BD0038831F /* incoming */ = {
+			isa = PBXGroup;
+			children = (
+				56F6BF962AE964120038831F /* packet0xef.cpp */,
+				56F6BF972AE964120038831F /* packet0xef.hpp */,
+			);
+			path = incoming;
+			sourceTree = "<group>";
+		};
+		56F6BF942AE963C60038831F /* outgoing */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = outgoing;
+			sourceTree = "<group>";
+		};
+		56F6BF952AE963CE0038831F /* bidirectional */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = bidirectional;
+			sourceTree = "<group>";
+		};
+		56F6BF9F2AE9AC380038831F /* support */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		56F6BF762AE93A150038831F /* packets */ = {
+		56F6BF762AE93A150038831F /* uox */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 56F6BF7E2AE93A150038831F /* Build configuration list for PBXNativeTarget "packets" */;
+			buildConfigurationList = 56F6BF7E2AE93A150038831F /* Build configuration list for PBXNativeTarget "uox" */;
 			buildPhases = (
 				56F6BF732AE93A150038831F /* Sources */,
 				56F6BF742AE93A150038831F /* Frameworks */,
@@ -77,9 +189,9 @@
 			);
 			dependencies = (
 			);
-			name = packets;
+			name = uox;
 			productName = packets;
-			productReference = 56F6BF772AE93A150038831F /* packets */;
+			productReference = 56F6BF772AE93A150038831F /* uox */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -90,13 +202,14 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = "Charles Kerr";
 				TargetAttributes = {
 					56F6BF762AE93A150038831F = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
 				};
 			};
-			buildConfigurationList = 56F6BF722AE93A150038831F /* Build configuration list for PBXProject "packets" */;
+			buildConfigurationList = 56F6BF722AE93A150038831F /* Build configuration list for PBXProject "uox" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,7 +222,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				56F6BF762AE93A150038831F /* packets */,
+				56F6BF762AE93A150038831F /* uox */,
 			);
 		};
 /* End PBXProject section */
@@ -119,7 +232,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56536DE22AEA84120073C28F /* netutil.cpp in Sources */,
 				56F6BF7B2AE93A150038831F /* main.cpp in Sources */,
+				56F6BF882AE93AB80038831F /* buffer.cpp in Sources */,
+				56F6BF922AE93C9B0038831F /* clientversion.cpp in Sources */,
+				56536DDE2AEA84010073C28F /* ip4util.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +365,7 @@
 				DEVELOPMENT_TEAM = CF264WE69M;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = $PROJECT_DIR/uox;
 			};
 			name = Debug;
 		};
@@ -258,13 +376,14 @@
 				DEVELOPMENT_TEAM = CF264WE69M;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = $PROJECT_DIR/uox;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		56F6BF722AE93A150038831F /* Build configuration list for PBXProject "packets" */ = {
+		56F6BF722AE93A150038831F /* Build configuration list for PBXProject "uox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				56F6BF7C2AE93A150038831F /* Debug */,
@@ -273,7 +392,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		56F6BF7E2AE93A150038831F /* Build configuration list for PBXNativeTarget "packets" */ = {
+		56F6BF7E2AE93A150038831F /* Build configuration list for PBXNativeTarget "uox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				56F6BF7F2AE93A150038831F /* Debug */,
