@@ -35,6 +35,10 @@
 		56536DE02AEA84120073C28F /* netutil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = netutil.cpp; sourceTree = "<group>"; };
 		56536DE12AEA84120073C28F /* netutil.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = netutil.hpp; sourceTree = "<group>"; };
 		56536DE32AEA84600073C28F /* neterror.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = neterror.hpp; sourceTree = "<group>"; };
+		56536DE52AEA92D20073C28F /* uox.vcxproj */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = uox.vcxproj; sourceTree = "<group>"; };
+		56536DE62AEA92D20073C28F /* uox.sln */ = {isa = PBXFileReference; lastKnownFileType = text; path = uox.sln; sourceTree = "<group>"; };
+		56536DE72AEA92D20073C28F /* uox.vcxproj.filters */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = uox.vcxproj.filters; sourceTree = "<group>"; };
+		56536DE82AEA92EA0073C28F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		56F6BF772AE93A150038831F /* uox */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = uox; sourceTree = BUILT_PRODUCTS_DIR; };
 		56F6BF7A2AE93A150038831F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		56F6BF822AE93A6F0038831F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -73,9 +77,21 @@
 			path = type;
 			sourceTree = "<group>";
 		};
+		56536DE42AEA92B30073C28F /* windows */ = {
+			isa = PBXGroup;
+			children = (
+				56536DE62AEA92D20073C28F /* uox.sln */,
+				56536DE52AEA92D20073C28F /* uox.vcxproj */,
+				56536DE72AEA92D20073C28F /* uox.vcxproj.filters */,
+			);
+			name = windows;
+			sourceTree = "<group>";
+		};
 		56F6BF6E2AE93A150038831F = {
 			isa = PBXGroup;
 			children = (
+				56536DE82AEA92EA0073C28F /* .gitignore */,
+				56536DE42AEA92B30073C28F /* windows */,
 				56F6BF9F2AE9AC380038831F /* support */,
 				56F6BF792AE93A150038831F /* uox */,
 				56F6BF782AE93A150038831F /* Products */,
