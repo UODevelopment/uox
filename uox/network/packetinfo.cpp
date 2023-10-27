@@ -645,5 +645,5 @@ auto PacketInfo::update(const ClientVersion &version) ->void {
 }
 //======================================================================
 auto PacketInfo::sizeFor(packetid_t id) -> int {
-    return -1 ;
+    return this->packetSize.at(id) ;
 }
