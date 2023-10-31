@@ -18818,8 +18818,10 @@
 		56ECB9CE2AED2C3E002B47D4 /* packet */ = {
 			isa = PBXGroup;
 			children = (
-				56ECBA2D2AED75F3002B47D4 /* process */,
 				56ECBA2C2AED75EB002B47D4 /* create */,
+				56ECBA2D2AED75F3002B47D4 /* process */,
+				56ECBA432AED7755002B47D4 /* createpacket.cpp */,
+				56ECBA442AED7755002B47D4 /* createpacket.hpp */,
 				56F6BF8D2AE93B6E0038831F /* huffman.cpp */,
 				56F6BF8E2AE93B6E0038831F /* huffman.hpp */,
 				56F6BF8A2AE93B020038831F /* packet.cpp */,
@@ -18828,8 +18830,6 @@
 				56F6BF9D2AE992EE0038831F /* packetsize.hpp */,
 				56ECBA402AED7747002B47D4 /* processpacket.cpp */,
 				56ECBA412AED7747002B47D4 /* processpacket.hpp */,
-				56ECBA432AED7755002B47D4 /* createpacket.cpp */,
-				56ECBA442AED7755002B47D4 /* createpacket.hpp */,
 			);
 			path = packet;
 			sourceTree = "<group>";
@@ -18837,6 +18837,8 @@
 		56ECB9CF2AED2C48002B47D4 /* configuration */ = {
 			isa = PBXGroup;
 			children = (
+				56ECB9F72AED66F4002B47D4 /* boolcollection.cpp */,
+				56ECBA082AED66F6002B47D4 /* boolcollection.hpp */,
 				56ECBA032AED66F5002B47D4 /* eracollection.cpp */,
 				56ECB9FF2AED66F5002B47D4 /* eracollection.hpp */,
 				56ECBA002AED66F5002B47D4 /* flagcollection.cpp */,
@@ -18857,8 +18859,6 @@
 				56ECB9F42AED66F4002B47D4 /* stringcollection.hpp */,
 				56ECB9F52AED66F4002B47D4 /* timerdefault.cpp */,
 				56ECB9F82AED66F4002B47D4 /* timerdefault.hpp */,
-				56ECB9F72AED66F4002B47D4 /* boolcollection.cpp */,
-				56ECBA082AED66F6002B47D4 /* boolcollection.hpp */,
 			);
 			path = configuration;
 			sourceTree = "<group>";
@@ -19104,14 +19104,14 @@
 		56F6BF842AE93AB80038831F /* utility */ = {
 			isa = PBXGroup;
 			children = (
+				56F6BF852AE93AB80038831F /* buffer.cpp */,
+				56F6BF872AE93AB80038831F /* buffer.hpp */,
+				56536DDD2AEA84010073C28F /* ip4util.cpp */,
+				56536DDC2AEA84010073C28F /* ip4util.hpp */,
 				56536DE32AEA84600073C28F /* neterror.hpp */,
 				56536DDF2AEA84110073C28F /* nettype.hpp */,
 				56536DE02AEA84120073C28F /* netutil.cpp */,
 				56536DE12AEA84120073C28F /* netutil.hpp */,
-				56536DDD2AEA84010073C28F /* ip4util.cpp */,
-				56536DDC2AEA84010073C28F /* ip4util.hpp */,
-				56F6BF852AE93AB80038831F /* buffer.cpp */,
-				56F6BF872AE93AB80038831F /* buffer.hpp */,
 				56F6BF862AE93AB80038831F /* strutil.hpp */,
 			);
 			path = utility;

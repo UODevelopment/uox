@@ -20,70 +20,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="uox\utility\buffer.cpp">
-      <Filter>uox\utility</Filter>
-    </ClCompile>
-    <ClCompile Include="uox\utility\ip4util.cpp">
-      <Filter>uox\utility</Filter>
-    </ClCompile>
-    <ClCompile Include="uox\utility\netutil.cpp">
-      <Filter>uox\utility</Filter>
-    </ClCompile>
-    <ClCompile Include="uox\network\clientversion.cpp">
-      <Filter>uox\network</Filter>
-    </ClCompile>
-    <ClCompile Include="uox\network\huffman.cpp">
-      <Filter>uox\network</Filter>
-    </ClCompile>
-    <ClCompile Include="uox\network\packet.cpp">
-      <Filter>uox\network</Filter>
-    </ClCompile>
-    <ClCompile Include="uox\network\packetinfo.cpp">
-      <Filter>uox\network</Filter>
-    </ClCompile>
-    <ClCompile Include="uox\main.cpp">
-      <Filter>uox</Filter>
-    </ClCompile>
-    <ClCompile Include="uox\network\server.cpp">
-      <Filter>uox\network</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="uox\utility\buffer.hpp">
-      <Filter>uox\utility</Filter>
-    </ClInclude>
-    <ClInclude Include="uox\utility\ip4util.hpp">
-      <Filter>uox\utility</Filter>
-    </ClInclude>
-    <ClInclude Include="uox\utility\neterror.hpp">
-      <Filter>uox\utility</Filter>
-    </ClInclude>
-    <ClInclude Include="uox\utility\nettype.hpp">
-      <Filter>uox\utility</Filter>
-    </ClInclude>
-    <ClInclude Include="uox\utility\netutil.hpp">
-      <Filter>uox\utility</Filter>
-    </ClInclude>
-    <ClInclude Include="uox\utility\strutil.hpp">
-      <Filter>uox\utility</Filter>
-    </ClInclude>
-    <ClInclude Include="uox\type\typedef.hpp">
-      <Filter>uox\type</Filter>
-    </ClInclude>
-    <ClInclude Include="uox\network\clientversion.hpp">
-      <Filter>uox\network</Filter>
-    </ClInclude>
-    <ClInclude Include="uox\network\huffman.hpp">
-      <Filter>uox\network</Filter>
-    </ClInclude>
-    <ClInclude Include="uox\network\packet.hpp">
-      <Filter>uox\network</Filter>
-    </ClInclude>
-    <ClInclude Include="uox\network\packetinfo.hpp">
-      <Filter>uox\network</Filter>
-    </ClInclude>
-    <ClInclude Include="uox\network\server.hpp">
-      <Filter>uox\network</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
