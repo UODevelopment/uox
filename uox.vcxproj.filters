@@ -18,9 +18,486 @@
     <Filter Include="uox\utility">
       <UniqueIdentifier>{e58d6ad1-8734-4981-b995-b28c726f94d0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="uox\account">
+      <UniqueIdentifier>{af9a0792-25d4-4373-8d0e-45310164af1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="uox\configuration">
+      <UniqueIdentifier>{50ecef97-d621-4bfa-9c82-3cf5073674f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="uox\packet">
+      <UniqueIdentifier>{8cc04996-95e5-47de-a581-bb061bc07322}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="uox\packet\create">
+      <UniqueIdentifier>{c32b73cf-658f-4a23-bc83-a6d3f7f4461c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="uox\packet\process">
+      <UniqueIdentifier>{ee110996-ae0b-4ddd-9ace-abe37a8445af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="uox\gameobject">
+      <UniqueIdentifier>{4765e4a4-bd13-419d-9ebb-9b7a85f3fa71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="uox\gameobject\factory">
+      <UniqueIdentifier>{08952fef-cd46-4ec9-b815-952c7790b231}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="uox\gameobject\object">
+      <UniqueIdentifier>{a965ab36-2128-4657-bca1-31004ae538e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="support">
+      <UniqueIdentifier>{a800684c-547f-436a-910b-34aa98418773}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="support\asio">
+      <UniqueIdentifier>{1835fe88-3e13-425c-a04f-2b432f996425}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="uox\main.cpp">
+      <Filter>uox</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\account\account.cpp">
+      <Filter>uox\account</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\account\accountcharacter.cpp">
+      <Filter>uox\account</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\account\accountentry.cpp">
+      <Filter>uox\account</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\type\advancement.cpp">
+      <Filter>uox\type</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\type\attribute.cpp">
+      <Filter>uox\type</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\gameobject\object\baseobject.cpp">
+      <Filter>uox\gameobject\object</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\gameobject\object\boat.cpp">
+      <Filter>uox\gameobject\object</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\network\client.cpp">
+      <Filter>uox\network</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\network\clienttype.cpp">
+      <Filter>uox\network</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\network\clientversion.cpp">
+      <Filter>uox\network</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\gameobject\factory\allfactory.cpp">
+      <Filter>uox\gameobject\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\utility\buffer.cpp">
+      <Filter>uox\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\configuration\boolcollection.cpp">
+      <Filter>uox\configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\gameobject\object\building.cpp">
+      <Filter>uox\gameobject\object</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\gameobject\object\character.cpp">
+      <Filter>uox\gameobject\object</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\packet\createpacket.cpp">
+      <Filter>uox\packet</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\packet\create\createpacket0x8c.cpp">
+      <Filter>uox\packet\create</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\packet\create\createpacket0x82.cpp">
+      <Filter>uox\packet\create</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\packet\create\createpacket0xa8.cpp">
+      <Filter>uox\packet\create</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\packet\create\createpacket0xa9.cpp">
+      <Filter>uox\packet\create</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\packet\create\createpacket0xb9.cpp">
+      <Filter>uox\packet\create</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\packet\create\createpacket0xbd.cpp">
+      <Filter>uox\packet\create</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\type\direction.cpp">
+      <Filter>uox\type</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\type\era.cpp">
+      <Filter>uox\type</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\configuration\eracollection.cpp">
+      <Filter>uox\configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\gameobject\factory\factory.cpp">
+      <Filter>uox\gameobject\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\configuration\flagcollection.cpp">
+      <Filter>uox\configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\packet\huffman.cpp">
+      <Filter>uox\packet</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\configuration\intcollection.cpp">
+      <Filter>uox\configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\utility\ip4util.cpp">
+      <Filter>uox\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\gameobject\object\item.cpp">
+      <Filter>uox\gameobject\object</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\gameobject\factory\itemfactory.cpp">
+      <Filter>uox\gameobject\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\configuration\language.cpp">
+      <Filter>uox\configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\type\layer.cpp">
+      <Filter>uox\type</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\type\location.cpp">
+      <Filter>uox\type</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\gameobject\object\mobile.cpp">
+      <Filter>uox\gameobject\object</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\gameobject\object\multi.cpp">
+      <Filter>uox\gameobject\object</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\gameobject\factory\multifactory.cpp">
+      <Filter>uox\gameobject\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\utility\netutil.cpp">
+      <Filter>uox\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\gameobject\object\objectflag.cpp">
+      <Filter>uox\gameobject\object</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\gameobject\factory\objectsection.cpp">
+      <Filter>uox\gameobject\object</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\packet\packet.cpp">
+      <Filter>uox\packet</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\packet\packetsize.cpp">
+      <Filter>uox\packet</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\packet\create\packet0x8c.cpp">
+      <Filter>uox\packet\create</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\configuration\pathcollection.cpp">
+      <Filter>uox\configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\gameobject\object\player.cpp">
+      <Filter>uox\gameobject\object</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\gameobject\factory\playerfactory.cpp">
+      <Filter>uox\gameobject\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\type\point.cpp">
+      <Filter>uox\type</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\packet\process\process0x00.cpp">
+      <Filter>uox\packet\process</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\packet\process\process0x59.cpp">
+      <Filter>uox\packet\process</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\packet\process\process0x80.cpp">
+      <Filter>uox\packet\process</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\packet\process\process0x83.cpp">
+      <Filter>uox\packet\process</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\packet\process\process0x91.cpp">
+      <Filter>uox\packet\process</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\packet\process\process0xa0.cpp">
+      <Filter>uox\packet\process</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\packet\process\process0xf8.cpp">
+      <Filter>uox\packet\process</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\packet\processpacket.cpp">
+      <Filter>uox\packet</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\type\range.cpp">
+      <Filter>uox\type</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\configuration\realcollection.cpp">
+      <Filter>uox\configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\configuration\serverconfig.cpp">
+      <Filter>uox\configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\configuration\startcollection.cpp">
+      <Filter>uox\configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\configuration\stringcollection.cpp">
+      <Filter>uox\configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\configuration\timerdefault.cpp">
+      <Filter>uox\configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\type\skill.cpp">
+      <Filter>uox\type</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\type\startlocation.cpp">
+      <Filter>uox\type</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\account\userinfo.cpp">
+      <Filter>uox\account</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\network\server.cpp">
+      <Filter>uox\network</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\type\visiblity.cpp">
+      <Filter>uox\type</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\gameobject\factory\serialgen.cpp">
+      <Filter>uox\gameobject\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\gameobject\factory\spawnerfactory.cpp">
+      <Filter>uox\gameobject\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\gameobject\object\spawner.cpp">
+      <Filter>uox\gameobject\object</Filter>
+    </ClCompile>
+    <ClCompile Include="uox\gameobject\objectholder.cpp">
+      <Filter>uox\gameobject</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="uox\account\account.hpp">
+      <Filter>uox\account</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\account\accountcharacter.hpp">
+      <Filter>uox\account</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\account\accountentry.hpp">
+      <Filter>uox\account</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\type\visiblity.hpp">
+      <Filter>uox\type</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\type\typedef.hpp">
+      <Filter>uox\type</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\utility\netutil.hpp">
+      <Filter>uox\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\utility\neterror.hpp">
+      <Filter>uox\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\utility\nettype.hpp">
+      <Filter>uox\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\utility\strutil.hpp">
+      <Filter>uox\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\type\advancement.hpp">
+      <Filter>uox\type</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\gameobject\factory\allfactory.hpp">
+      <Filter>uox\gameobject\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\type\attribute.hpp">
+      <Filter>uox\type</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\type\era.hpp">
+      <Filter>uox\type</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\type\direction.hpp">
+      <Filter>uox\type</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\network\client.hpp">
+      <Filter>uox\network</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\network\clienttype.hpp">
+      <Filter>uox\network</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\network\clientversion.hpp">
+      <Filter>uox\network</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\network\server.hpp">
+      <Filter>uox\network</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\utility\ip4util.hpp">
+      <Filter>uox\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\configuration\flagcollection.hpp">
+      <Filter>uox\configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\configuration\intcollection.hpp">
+      <Filter>uox\configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\configuration\eracollection.hpp">
+      <Filter>uox\configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\configuration\language.hpp">
+      <Filter>uox\configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\configuration\pathcollection.hpp">
+      <Filter>uox\configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\configuration\realcollection.hpp">
+      <Filter>uox\configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\configuration\timerdefault.hpp">
+      <Filter>uox\configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\configuration\stringcollection.hpp">
+      <Filter>uox\configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\configuration\startcollection.hpp">
+      <Filter>uox\configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\type\skill.hpp">
+      <Filter>uox\type</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\type\range.hpp">
+      <Filter>uox\type</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\type\point.hpp">
+      <Filter>uox\type</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\type\location.hpp">
+      <Filter>uox\type</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\type\layer.hpp">
+      <Filter>uox\type</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\utility\buffer.hpp">
+      <Filter>uox\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\gameobject\factory\itemfactory.hpp">
+      <Filter>uox\gameobject\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\gameobject\factory\multifactory.hpp">
+      <Filter>uox\gameobject\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\gameobject\factory\playerfactory.hpp">
+      <Filter>uox\gameobject\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\gameobject\factory\spawnerfactory.hpp">
+      <Filter>uox\gameobject\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\configuration\boolcollection.hpp">
+      <Filter>uox\configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\configuration\serverconfig.hpp">
+      <Filter>uox\configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\gameobject\object\player.hpp">
+      <Filter>uox\gameobject\object</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\gameobject\object\spawner.hpp">
+      <Filter>uox\gameobject\object</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\gameobject\object\objectflag.hpp">
+      <Filter>uox\gameobject\object</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\gameobject\object\mobile.hpp">
+      <Filter>uox\gameobject\object</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\gameobject\object\item.hpp">
+      <Filter>uox\gameobject\object</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\gameobject\object\multi.hpp">
+      <Filter>uox\gameobject\object</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\gameobject\object\building.hpp">
+      <Filter>uox\gameobject\object</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\gameobject\object\boat.hpp">
+      <Filter>uox\gameobject\object</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\gameobject\object\baseobject.hpp">
+      <Filter>uox\gameobject\object</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\gameobject\object\character.hpp">
+      <Filter>uox\gameobject\object</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\packet\huffman.hpp">
+      <Filter>uox\packet</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\packet\packet.hpp">
+      <Filter>uox\packet</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\packet\createpacket.hpp">
+      <Filter>uox\packet</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\packet\packetsize.hpp">
+      <Filter>uox\packet</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\packet\processpacket.hpp">
+      <Filter>uox\packet</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\type\startlocation.hpp">
+      <Filter>uox\type</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\account\userinfo.hpp">
+      <Filter>uox\account</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\gameobject\factory\factory.hpp">
+      <Filter>uox\gameobject\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\gameobject\factory\serialgen.hpp">
+      <Filter>uox\gameobject\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\gameobject\objectholder.hpp">
+      <Filter>uox\gameobject</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\packet\create\createpacket0x8c.hpp">
+      <Filter>uox\packet\create</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\packet\create\createpacket0x82.hpp">
+      <Filter>uox\packet\create</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\packet\create\createpacket0xa8.hpp">
+      <Filter>uox\packet\create</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\packet\create\createpacket0xa9.hpp">
+      <Filter>uox\packet\create</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\packet\create\createpacket0xb9.hpp">
+      <Filter>uox\packet\create</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\packet\create\createpacket0xbd.hpp">
+      <Filter>uox\packet\create</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\gameobject\factory\objectsection.hpp">
+      <Filter>uox\gameobject\object</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\packet\process\process0x00.hpp">
+      <Filter>uox\packet\process</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\packet\process\process0x5d.hpp">
+      <Filter>uox\packet\process</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\packet\process\process0x80.hpp">
+      <Filter>uox\packet\process</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\packet\process\process0x83.hpp">
+      <Filter>uox\packet\process</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\packet\process\process0x91.hpp">
+      <Filter>uox\packet\process</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\packet\process\process0xa0.hpp">
+      <Filter>uox\packet\process</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\packet\process\process0xf8.hpp">
+      <Filter>uox\packet\process</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\packet\create\packet0x8c.hpp">
+      <Filter>uox\packet\create</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\packet\create\packet0x82.hpp">
+      <Filter>uox\packet\create</Filter>
+    </ClInclude>
+    <ClInclude Include="uox\packet\create\packet0xa8.hpp">
+      <Filter>uox\packet\create</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

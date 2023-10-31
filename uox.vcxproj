@@ -17,7 +17,6 @@
     <ClCompile Include="uox\account\accountcharacter.cpp" />
     <ClCompile Include="uox\account\accountentry.cpp" />
     <ClCompile Include="uox\account\userinfo.cpp" />
-
     <!-- configuration -->
     <ClCompile Include="uox\configuration\boolcollection.cpp" />
     <ClCompile Include="uox\configuration\eracollection.cpp" />
@@ -30,11 +29,9 @@
     <ClCompile Include="uox\configuration\startcollection.cpp" />
     <ClCompile Include="uox\configuration\stringcollection.cpp" />
     <ClCompile Include="uox\configuration\timerdefault.cpp" />
-
     <!-- event -->
     <!-- gameobject -->
     <ClCompile Include="uox\gameobject\objectholder.cpp" />
-
     <!-- gameobject/object -->
     <ClCompile Include="uox\gameobject\object\baseobject.cpp" />
     <ClCompile Include="uox\gameobject\object\boat.cpp" />
@@ -101,96 +98,96 @@
     <ClCompile Include="uox\utility\netutil.cpp" />
   </ItemGroup>
   <ItemGroup>
-      <!-- account -->
-      <ClInclude Include="uox\account\account.hpp" />
-      <ClInclude Include="uox\account\accountcharacter.hpp" />
-      <ClInclude Include="uox\account\accountentry.hpp" />
-      <ClInclude Include="uox\account\userinfo.hpp" />
-      <!-- configuration -->
-      <ClInclude Include="uox\configuration\boolcollection.hpp" />
-      <ClInclude Include="uox\configuration\eracollection.hpp" />
-      <ClInclude Include="uox\configuration\flagcollection.hpp" />
-      <ClInclude Include="uox\configuration\intcollection.hpp" />
-      <ClInclude Include="uox\configuration\language.hpp" />
-      <ClInclude Include="uox\configuration\pathcollection.hpp" />
-      <ClInclude Include="uox\configuration\realcollection.hpp" />
-      <ClInclude Include="uox\configuration\serverconfig.hpp" />
-      <ClInclude Include="uox\configuration\startcollection.hpp" />
-      <ClInclude Include="uox\configuration\stringcollection.hpp" />
-      <ClInclude Include="uox\configuration\timerdefault.hpp" />
-      <!-- event -->
-      <!-- gameobject -->
-      <ClInclude Include="uox\gameobject\objectholder.hpp" />
-      <!-- gameobject/object -->
-      <ClInclude Include="uox\gameobject\object\baseobject.hpp" />
-      <ClInclude Include="uox\gameobject\object\boat.hpp" />
-      <ClInclude Include="uox\gameobject\object\building.hpp" />
-      <ClInclude Include="uox\gameobject\object\character.hpp" />
-      <ClInclude Include="uox\gameobject\object\item.hpp" />
-      <ClInclude Include="uox\gameobject\object\mobile.hpp" />
-      <ClInclude Include="uox\gameobject\object\multi.hpp" />
-      <ClInclude Include="uox\gameobject\object\objectflag.hpp" />
-      <ClInclude Include="uox\gameobject\object\player.hpp" />
-      <ClInclude Include="uox\gameobject\object\spawner.hpp" />
-      <!-- gameobject/factory -->
-      <ClInclude Include="uox\gameobject\factory\allfactory.hpp" />
-      <ClInclude Include="uox\gameobject\factory\factory.hpp" />
-      <ClInclude Include="uox\gameobject\factory\itemfactory.hpp" />
-      <ClInclude Include="uox\gameobject\factory\multifactory.hpp" />
-      <ClInclude Include="uox\gameobject\factory\objectsection.hpp" />
-      <ClInclude Include="uox\gameobject\factory\playerfactory.hpp" />
-      <ClInclude Include="uox\gameobject\factory\serialgen.hpp" />
-      <ClInclude Include="uox\gameobject\factory\spawnerfactory.hpp" />
-      <!-- network -->
-      <ClInclude Include="uox\network\client.hpp" />
-      <ClInclude Include="uox\network\clienttype.hpp" />
-      <ClInclude Include="uox\network\clientversion.hpp" />
-      <ClInclude Include="uox\network\server.hpp" />
-      <!-- packet -->
-      <ClInclude Include="uox\packet\createpacket.hpp" />
-      <ClInclude Include="uox\packet\huffman.hpp" />
-      <ClInclude Include="uox\packet\packet.hpp" />
-      <ClInclude Include="uox\packet\packetsize.hpp" />
-      <ClInclude Include="uox\packet\processpacket.hpp" />
-      <!-- packet/create -->
-      <ClInclude Include="uox\packet\create\createpacket0x8c.hpp" />
-      <ClInclude Include="uox\packet\create\createpacket0x82.hpp" />
-      <ClInclude Include="uox\packet\create\createpacket0xa8.hpp" />
-      <ClInclude Include="uox\packet\create\createpacket0xa9.hpp" />
-      <ClInclude Include="uox\packet\create\createpacket0xb9.hpp" />
-      <ClInclude Include="uox\packet\create\createpacket0xbd.hpp" />
-      <ClInclude Include="uox\packet\create\packet0x8c.hpp" />
-      <ClInclude Include="uox\packet\create\packet0x82.hpp" />
-      <ClInclude Include="uox\packet\create\packet0xa8.hpp" />
-      <!-- packet/process -->
-      <ClInclude Include="uox\packet\process\process0x00.hpp" />
-      <ClInclude Include="uox\packet\process\process0x5d.hpp" />
-      <ClInclude Include="uox\packet\process\process0x80.hpp" />
-      <ClInclude Include="uox\packet\process\process0x83.hpp" />
-      <ClInclude Include="uox\packet\process\process0x91.hpp" />
-      <ClInclude Include="uox\packet\process\process0xa0.hpp" />
-      <ClInclude Include="uox\packet\process\process0xf8.hpp" />
-      <!-- type -->
-      <ClInclude Include="uox\type\advancement.hpp" />
-      <ClInclude Include="uox\type\attribute.hpp" />
-      <ClInclude Include="uox\type\direction.hpp" />
-      <ClInclude Include="uox\type\era.hpp" />
-      <ClInclude Include="uox\type\layer.hpp" />
-      <ClInclude Include="uox\type\location.hpp" />
-      <ClInclude Include="uox\type\point.hpp" />
-      <ClInclude Include="uox\type\range.hpp" />
-      <ClInclude Include="uox\type\skill.hpp" />
-      <ClInclude Include="uox\type\startlocation.hpp" />
-      <ClInclude Include="uox\type\typedef.hpp" />
-      <ClInclude Include="uox\type\visiblity.hpp" />
-      <!-- uodata -->
-      <!-- utility -->
-      <ClInclude Include="uox\utility\buffer.hpp" />
-      <ClInclude Include="uox\utility\ip4util.hpp" />
-      <ClInclude Include="uox\utility\neterror.hpp" />
-      <ClInclude Include="uox\utility\nettype.hpp" />
-      <ClInclude Include="uox\utility\netutil.hpp" />
-      <ClInclude Include="uox\utility\strutil.hpp" />
+    <!-- account -->
+    <ClInclude Include="uox\account\account.hpp" />
+    <ClInclude Include="uox\account\accountcharacter.hpp" />
+    <ClInclude Include="uox\account\accountentry.hpp" />
+    <ClInclude Include="uox\account\userinfo.hpp" />
+    <!-- configuration -->
+    <ClInclude Include="uox\configuration\boolcollection.hpp" />
+    <ClInclude Include="uox\configuration\eracollection.hpp" />
+    <ClInclude Include="uox\configuration\flagcollection.hpp" />
+    <ClInclude Include="uox\configuration\intcollection.hpp" />
+    <ClInclude Include="uox\configuration\language.hpp" />
+    <ClInclude Include="uox\configuration\pathcollection.hpp" />
+    <ClInclude Include="uox\configuration\realcollection.hpp" />
+    <ClInclude Include="uox\configuration\serverconfig.hpp" />
+    <ClInclude Include="uox\configuration\startcollection.hpp" />
+    <ClInclude Include="uox\configuration\stringcollection.hpp" />
+    <ClInclude Include="uox\configuration\timerdefault.hpp" />
+    <!-- event -->
+    <!-- gameobject -->
+    <ClInclude Include="uox\gameobject\objectholder.hpp" />
+    <!-- gameobject/object -->
+    <ClInclude Include="uox\gameobject\object\baseobject.hpp" />
+    <ClInclude Include="uox\gameobject\object\boat.hpp" />
+    <ClInclude Include="uox\gameobject\object\building.hpp" />
+    <ClInclude Include="uox\gameobject\object\character.hpp" />
+    <ClInclude Include="uox\gameobject\object\item.hpp" />
+    <ClInclude Include="uox\gameobject\object\mobile.hpp" />
+    <ClInclude Include="uox\gameobject\object\multi.hpp" />
+    <ClInclude Include="uox\gameobject\object\objectflag.hpp" />
+    <ClInclude Include="uox\gameobject\object\player.hpp" />
+    <ClInclude Include="uox\gameobject\object\spawner.hpp" />
+    <!-- gameobject/factory -->
+    <ClInclude Include="uox\gameobject\factory\allfactory.hpp" />
+    <ClInclude Include="uox\gameobject\factory\factory.hpp" />
+    <ClInclude Include="uox\gameobject\factory\itemfactory.hpp" />
+    <ClInclude Include="uox\gameobject\factory\multifactory.hpp" />
+    <ClInclude Include="uox\gameobject\factory\objectsection.hpp" />
+    <ClInclude Include="uox\gameobject\factory\playerfactory.hpp" />
+    <ClInclude Include="uox\gameobject\factory\serialgen.hpp" />
+    <ClInclude Include="uox\gameobject\factory\spawnerfactory.hpp" />
+    <!-- network -->
+    <ClInclude Include="uox\network\client.hpp" />
+    <ClInclude Include="uox\network\clienttype.hpp" />
+    <ClInclude Include="uox\network\clientversion.hpp" />
+    <ClInclude Include="uox\network\server.hpp" />
+    <!-- packet -->
+    <ClInclude Include="uox\packet\createpacket.hpp" />
+    <ClInclude Include="uox\packet\huffman.hpp" />
+    <ClInclude Include="uox\packet\packet.hpp" />
+    <ClInclude Include="uox\packet\packetsize.hpp" />
+    <ClInclude Include="uox\packet\processpacket.hpp" />
+    <!-- packet/create -->
+    <ClInclude Include="uox\packet\create\createpacket0x8c.hpp" />
+    <ClInclude Include="uox\packet\create\createpacket0x82.hpp" />
+    <ClInclude Include="uox\packet\create\createpacket0xa8.hpp" />
+    <ClInclude Include="uox\packet\create\createpacket0xa9.hpp" />
+    <ClInclude Include="uox\packet\create\createpacket0xb9.hpp" />
+    <ClInclude Include="uox\packet\create\createpacket0xbd.hpp" />
+    <ClInclude Include="uox\packet\create\packet0x8c.hpp" />
+    <ClInclude Include="uox\packet\create\packet0x82.hpp" />
+    <ClInclude Include="uox\packet\create\packet0xa8.hpp" />
+    <!-- packet/process -->
+    <ClInclude Include="uox\packet\process\process0x00.hpp" />
+    <ClInclude Include="uox\packet\process\process0x5d.hpp" />
+    <ClInclude Include="uox\packet\process\process0x80.hpp" />
+    <ClInclude Include="uox\packet\process\process0x83.hpp" />
+    <ClInclude Include="uox\packet\process\process0x91.hpp" />
+    <ClInclude Include="uox\packet\process\process0xa0.hpp" />
+    <ClInclude Include="uox\packet\process\process0xf8.hpp" />
+    <!-- type -->
+    <ClInclude Include="uox\type\advancement.hpp" />
+    <ClInclude Include="uox\type\attribute.hpp" />
+    <ClInclude Include="uox\type\direction.hpp" />
+    <ClInclude Include="uox\type\era.hpp" />
+    <ClInclude Include="uox\type\layer.hpp" />
+    <ClInclude Include="uox\type\location.hpp" />
+    <ClInclude Include="uox\type\point.hpp" />
+    <ClInclude Include="uox\type\range.hpp" />
+    <ClInclude Include="uox\type\skill.hpp" />
+    <ClInclude Include="uox\type\startlocation.hpp" />
+    <ClInclude Include="uox\type\typedef.hpp" />
+    <ClInclude Include="uox\type\visiblity.hpp" />
+    <!-- uodata -->
+    <!-- utility -->
+    <ClInclude Include="uox\utility\buffer.hpp" />
+    <ClInclude Include="uox\utility\ip4util.hpp" />
+    <ClInclude Include="uox\utility\neterror.hpp" />
+    <ClInclude Include="uox\utility\nettype.hpp" />
+    <ClInclude Include="uox\utility\netutil.hpp" />
+    <ClInclude Include="uox\utility\strutil.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -229,11 +226,11 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);NOMINMAX;WIN32_LEAN_AND_MEAN</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=WIN10</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <LanguageStandard_C>stdc11</LanguageStandard_C>
-      <AdditionalIncludeDirectories>./uox</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./uox;./support;./support/asio;./support/zlib</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -246,11 +243,11 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);NOMINMAX;WIN32_LEAN_AND_MEAN</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=WIN10</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <LanguageStandard_C>stdc11</LanguageStandard_C>
-      <AdditionalIncludeDirectories>./uox</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./uox;./support;./support/asio;./support/zlib</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
