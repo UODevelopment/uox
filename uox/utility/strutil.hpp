@@ -149,7 +149,7 @@ namespace util {
     /// - Returns: Returns a new string , that has all data after the separator removed (inclusive)
     inline auto strip(const std::string &value, const std::string &sep = "//", const std::string &whitespace = " \t\v\f\n\r") -> std::string {
         auto rvalue = std::string();
-        auto temp = value;
+        std::string temp = value;
         if (!sep.empty()) {
             auto loc = value.find(sep);
             if (loc != std::string::npos) {
@@ -170,7 +170,7 @@ namespace util {
     ///     - whitespace: optional, if present(not empty), the two values are trimmed on return
     /// - Returns: Returns a pair of string views containing the two values
     inline auto split(const std::string &value, const std::string &sep, const std::string &whitespace = " \t\v\f\n\r") -> std::pair<std::string, std::string> {
-        auto vfirst = value;
+        std::string vfirst = value;
         auto vsecond = std::string();
         if (!sep.empty()) {
             auto loc = value.find(sep);
@@ -492,10 +492,10 @@ namespace util {
         }
         auto num_rows = (length / entries_line) + (((length % entries_line) == 0) ? 0 : 1);
         // what is the largest number for the address ?
-        auto max_address_chars = static_cast<int>((ntos(num_rows * entries_line)).size());
+        auto max_address_chars = static_cast<std::streamsize>((ntos(num_rows * entries_line)).size());
         
         // first write out the header
-        output << std::setw(max_address_chars + 2) << "" << std::setw(1);
+        output << std::setw(max_address_chars + static_cast<std::streamsize>(2)) << "" << std::setw(static_cast<std::streamsize>(1));
         for (auto i = 0; i < entries_line; ++i) {
             output << ntos(i, 10, false, entry_size, ' ') << " ";
         }
@@ -509,7 +509,7 @@ namespace util {
             if (((i % static_cast<std::size_t>(entries_line) == 0) && (i >= static_cast<std::size_t>(entries_line))) ||
                 (i == 0)) {
                 // This is a new line!
-                output << ntos(row * entries_line, 10, false, max_address_chars, ' ') << ": ";
+                output << ntos(row * entries_line, 10, false, static_cast<int>(max_address_chars), ' ') << ": ";
                 text = std::string(entries_line, ' ');
             }
             output << ntos(*(buffer + i), radix, false, entry_size) << " ";
@@ -521,7 +521,7 @@ namespace util {
             else {
                 text[(i % entries_line)] = '.';
             }
-            if (i % entries_line == entries_line - 1) {
+            if ((i % entries_line) == static_cast<size_t>(entries_line - 1)) {
                 output << " " << text << "\n";
             }
         }
@@ -529,7 +529,7 @@ namespace util {
         auto last_line_entry = length % entries_line;
         if (last_line_entry != 0) {
             // we need to put the number of leading spaces
-            output << std::setw(static_cast<int>((entries_line - last_line_entry) * (entry_size + 1))) << "" << std::setw(1) << " " << text << "\n";
+            output << std::setw(static_cast<std::streamsize>((static_cast<std::streamsize>(entries_line) - last_line_entry) * (static_cast<std::streamsize>(entry_size) + 1))) << "" << std::setw(1) << " " << text << "\n";
         }
     }
     

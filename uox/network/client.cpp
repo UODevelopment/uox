@@ -231,8 +231,8 @@ auto Client::handle_read(const asio::error_code& err, size_t bytes_transferred) 
     // This just looks to see if we got what we asked, if we didn't it requeues it
     if (bytes_transferred != dataRequested){
         // we need to get the rest
-        netSocket.async_read_some( asio::buffer(packetData.data()+( packetData.size() - (dataRequested-bytes_transferred)), (dataRequested-bytes_transferred)), std::bind(&Client::handle_read, shared_from_this(), std::placeholders::_1, std::placeholders::_2));
-        dataRequested = (dataRequested-bytes_transferred);
+        netSocket.async_read_some( asio::buffer(packetData.data()+( packetData.size() - (dataRequested-static_cast<int>(bytes_transferred))), (dataRequested-static_cast<int>(bytes_transferred))), std::bind(&Client::handle_read, shared_from_this(), std::placeholders::_1, std::placeholders::_2));
+        dataRequested = (dataRequested-static_cast<int>(bytes_transferred));
     }
     else {
         // if firstData, we let process it separate
@@ -258,7 +258,7 @@ auto Client::handle_read(const asio::error_code& err, size_t bytes_transferred) 
                     dataRequested = size ;
                 }
                 netSocket.async_read_some( asio::buffer(packetData.data()+( packetData.size() - (dataRequested-bytes_transferred)), (dataRequested-bytes_transferred)), std::bind(&Client::handle_read, shared_from_this(), std::placeholders::_1, std::placeholders::_2));
-                dataRequested = (dataRequested-bytes_transferred);
+                dataRequested = (dataRequested-static_cast<int>(bytes_transferred));
             }
             else if (packetData.size()==3 && packetSize.sizeFor(packetData.at(0))<0){
                 // This was a variable, so now what is the real size?

@@ -91,7 +91,7 @@ auto createPacket0xA9(Client *client) -> Packet{
     auto startloc = serverConfig.startingLocation.location;
     auto old = (client->version() >= ClientVersion(7,0,13,0)?false:true) ;
     
-    Packet packet = Packet(0xa9,3+1+(AccountEntry::MAXCHARACTER * 60)+1+(startloc.size() * (old? 67 : 89)) + 4);
+    Packet packet = Packet(0xa9,static_cast<int>(3+1+(AccountEntry::MAXCHARACTER * 60)+1+(startloc.size() * (old? 67 : 89)) + 4));
     packet.setOffset(3);
     packet.write(static_cast<std::uint8_t>(AccountEntry::MAXCHARACTER));
     for (auto i=0 ; i < AccountEntry::MAXCHARACTER;i++){

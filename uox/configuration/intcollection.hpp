@@ -8,6 +8,7 @@
 #include <map>
 #include <string>
 #include <vector>
+
 //======================================================================
 struct IntCollection {
     enum type_t {

@@ -9,7 +9,7 @@
 #include <string>
 
 #include "utility/buffer.hpp"
-#include "clientversion.hpp"
+#include "type/clientversion.hpp"
 #include "type/typedef.hpp"
 //======================================================================
 class Packet : public util::Buffer {

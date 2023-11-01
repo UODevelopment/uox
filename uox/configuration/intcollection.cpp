@@ -1,7 +1,6 @@
 //Copyright © 2023 Charles Kerr. All rights reserved.
 
 #include "intcollection.hpp"
-
 #include <algorithm>
 #include <stdexcept>
 
@@ -12,6 +11,7 @@ using namespace std::string_literals ;
 const std::map<std::string,IntCollection::type_t> IntCollection::NAMETYPEMAP{
     {"PORT"s,PORT},{"SERVERKEY"s,SERVERKEY},{"CLIENTFEATURE"s,CLIENTFEATURE},{"SERVERFEATURE"s,SERVERFEATURE}
 };
+
 //======================================================================
 auto IntCollection::typeForName(const std::string &name) -> type_t {
     auto iter = NAMETYPEMAP.find(name) ;

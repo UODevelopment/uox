@@ -16,7 +16,7 @@
 
 #include "asio/asio.hpp"
 #include "clienttype.hpp"
-#include "clientversion.hpp"
+#include "type/clientversion.hpp"
 #include "packet/packet.hpp"
 #include "packet/packetsize.hpp"
 #include "type/typedef.hpp"

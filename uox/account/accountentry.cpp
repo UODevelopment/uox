@@ -4,7 +4,7 @@
 
 #include <algorithm>
 #include <stdexcept>
-
+#include "type/clientversion.hpp"
 #include "utility/strutil.hpp"
 
 using namespace std::string_literals ;

@@ -38,8 +38,8 @@ extern ServerConfig serverConfig ;
 //======================================================================
 auto createPacket0x8C(Client *client) -> Packet{
     auto packet = Packet0x8C() ;
-    packet.setIPPort(client->relay(), serverConfig.intValue[IntCollection::PORT]);
-    packet.setKey(serverConfig.intValue[IntCollection::SERVERKEY]);
+    packet.setIPPort(client->relay(), static_cast<int>(serverConfig.intValue[IntCollection::PORT]));
+    packet.setKey(static_cast<std::uint32_t>(serverConfig.intValue[IntCollection::SERVERKEY]));
     return packet ;
 }
 

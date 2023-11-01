@@ -12,13 +12,13 @@
 #include <vector>
 
 #include "accountcharacter.hpp"
-#include "network/client.hpp"
 #include "utility/ip4util.hpp"
 #include "utility/nettype.hpp"
 #include "type/typedef.hpp"
 #include "userinfo.hpp"
 
 class Account ;
+class ClientVersion ;
 //======================================================================
 class AccountEntry {
     friend class Account ;
